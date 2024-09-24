@@ -6,7 +6,7 @@ const Listing = require("../models/listing.js");
 
 const { isLoggeIn,isOwner,validateListing } = require("../middleware.js");
 const router = express.Router();
-const ListiingController = require("../Controllers/listing.js");
+const ListiingController = require("../controllers/listing.js");
 const multer  = require("multer");
 const {storage} = require("../cloudConfig.js");
 const upload = multer({storage});

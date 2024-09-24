@@ -5,7 +5,7 @@ const Listing = require("../models/listing.js");
 const Review  = require("../models/reviewing.js");
 const {validateReview,isLoggeIn,isreviewAuthor} = require("../middleware.js")
 
-  const ReviewController = require("../Controllers/reviews.js")
+  const ReviewController = require("../controllers/reviews.js")
 // Post a review
 
 router.post("/" , isLoggeIn,validateReview, wrapAsync(ReviewController.PostReview ))  

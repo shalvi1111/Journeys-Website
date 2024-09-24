@@ -6,7 +6,7 @@ const wrapAsync = require("../utils/wrapAsync");
 const passport = require("passport");
 const { route } = require("./listing.js");
 const {saveRedirectUrl} = require("../middleware.js");
- const UserController = require("../Controllers/user.js")
+ const UserController = require("../controllers/user.js")
 const router = express.Router() ;
 
    router.get("/signup" ,UserController.getSignUp) ;
