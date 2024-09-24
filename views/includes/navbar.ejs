@@ -1,0 +1,36 @@
+
+    <nav class="navbar navbar-expand-md bg-body-tertiary border-bottom sticky-top">
+      <a class="navbar-brand" href="#" style="color: #294B29;"><i class="fa-solid fa-compass"></i>
+         <b> Journeys</b></a>
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="/listings">Explore</a>
+
+            </div>
+                                                                                                                                                                                                                                         
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search &nbsp; Destinations" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">
+                
+                <i class="fa-solid fa-magnifying-glass"></i> &nbsp; Search</button>
+            </form>
+
+              <div class="navbar-nav ms-auto">
+                <a class="nav-link" href="/listings/new">Add new Listings</a>
+                <% if(!currUser){ %>
+                  <a class="nav-link"  href="/signup"><b>Sign up</b></a>
+                 <a class="nav-link" href="/login"><b>Log in</b></a>
+               <% }        %>
+                 <% if(currUser){ %>
+                  <a class="nav-link"  href="/logout"><b>Log out</b></a>
+                 <% }    %>
+                 
+              </div>
+          </div>
+        </div>
+      </nav>
